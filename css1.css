@@ -1,0 +1,239 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & page setup */
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Center container with max width */
+.container {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+header p {
+  background-color: #f0f0f0;  /* light grey */
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #333;                 /* dark grey text for contrast */
+  display: inline-block;       /* so the background wraps tightly */
+  margin: 0 auto;
+  max-width: fit-content;
+  font-weight: 500;
+}
+
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+}
+
+/*
+header p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+*/
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #007acc;
+  color: #fff;
+  box-shadow: 0 2px 8px rgb(0 122 204 / 0.4);
+}
+
+/* Section */
+section {
+  background-color: #fff;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 35px;
+  margin-bottom: 45px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.12);
+}
+
+section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #222;
+  border-bottom: 3px solid #007acc;
+  padding-bottom: 8px;
+  letter-spacing: 0.03em;
+}
+
+/* Sub-headings */
+section h3, section h4 {
+  color: #333;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* Paragraph text */
+section p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.55;
+}
+
+/* Lists */
+section ul {
+  list-style: disc inside;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+/* Project wrapper */
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Links */
+a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #005a99;
+  text-decoration: underline;
+}
+
+nav a.active {
+  background-color: #007acc;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,122,204,0.4);
+  border-radius: 6px;
+}
+
+
+/* Contact info */
+.contact-info {
+  margin-bottom: 22px;
+}
+
+.contact-info h3 {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* Responsive adjustments */
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  section {
+    padding: 25px 20px;
+  }
+}
+
+/* Scroll to Top button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007acc;
+  color: #000000;
+  border: none;
+  padding: 12px 16px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,122,204,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #005a99;
+  box-shadow: 0 6px 15px rgba(0,90,153,0.6);
+}
+
+/* Show button when scrolled down */
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container {
+  max-width: 900px;    /* max width of the page content */
+  margin: 0 auto;      /* center horizontally */
+  padding: 20px;       /* add some padding around content */
+  box-sizing: border-box;
+}
+

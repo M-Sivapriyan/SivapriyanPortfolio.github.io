@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <header>
+        <h1>Sivapriyan M</h1>
+        <p>Data Analyst & Engineer | SQL/Python | Tableau & Power BI Visualizations</p>
+        <nav>
+            <ul>
+                <li><a href="#about" id="about-link">About Me</a></li>
+                <li><a href="#skills" id="skills-link">Skills</a></li>
+                <li><a href="#exp" id="exp-link">Experience</a></li>
+                <li><a href="#projects" id="projects-link">Projects</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <!-- About Me Section -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I specialize in turning raw data into powerful insights that drive smarter decisions. With experience across data inspection, cleansing, transformation, and modeling, I bring clarity to complex datasets and deliver actionable outcomes. Whether it’s optimizing operational efficiency, enhancing customer understanding, or supporting strategic planning, I’m committed to solving real business problems through data. My core strengths include data analysis, ETL development, and trend identification — with proficiency in tools like SQL, Python, Tableau, and Power BI. I focus on delivering clean, accurate, and scalable data solutions. Currently, I’m expanding my expertise in data engineering and advanced analytics to meet the growing demands of modern data ecosystems. Let’s connect and explore how data can move your business forward.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+<!--
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Tableau</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Altreyx</li>
+                <li>Power Bi</li>
+                <li>Excel</li>
+                <li>Azure</li>
+                <li>Git</li>
+                <li>AWS</li>
+            </ul>
+        </section>
+-->
+        <!-- My Experience -->
+        <!-- My Experience -->
+        <section class="exp" id="exp">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <h3>Data Analyst – Bilight Solutions, Chennai - 600034</h3>
+                <p><em>April 2022 – Present</em></p>
+                <ul>
+                    <li>Collaborated with cross-functional teams to deliver dashboards using Tableau and Power BI.</li>
+                    <li>Developed charts, trend analyses, and sub-reports tailored to stakeholders.</li>
+                    <li>Automated daily/monthly reporting, reducing turnaround time.</li>
+                    <li>Utilized Power Query, SQL, Tableau Prep & Python for ETL tasks and ad hoc analysis.</li>
+                    <li>Maintained scalable ETL pipelines adaptable to evolving business needs.</li>
+                    <li>Optimized SQL queries in PostgreSQL for data extraction and cleansing.</li>
+                    <li>Built a Customer Data Platform (CDP) with Tableau Prep, Python, and PostgreSQL for unified insights.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Power BI Intern – Yavda Analytics Pvt. Ltd.,Hyderabad</h3>
+                <p><em>February 2022 – March 2022</em></p>
+                <ul>
+                    <li>Developed strong technical skills in Power BI and data modeling.</li>
+                    <li>Built and validated data models and dashboards for business decisions.</li>
+                    <li>Implemented DAX calculations, KPIs, scorecards, and hierarchies in reports.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            
+            <!-- Data Engineering Projects -->
+            <div class="sub-projects">
+                <h3>Data Engineering Projects</h3>
+                <div class="project-wrapper">
+                    <div class="project">
+                        <h4><a href="link">Project 1: Hotel Management Data Warehouse</a></h4>
+                        <p>Built a centralized data warehouse by integrating data from multiple systems (Opera, Infrasys, SAP, WinHMS, etc.) using Python, SQL, and API ingestion. Designed ETL pipelines to consolidate and model hotel operations, revenue, sustainability, and guest satisfaction metrics.</p>
+                    </div>
+                    <div class="project">
+                        <h4><a href="link">Project 2: Retail Sales ETL Automation</a></h4>
+                        <p>Developed automated ETL pipelines using Python and Airflow to extract daily sales data from POS systems, transform it using Pandas and SQL, and load into a cloud-based PostgreSQL database. Enabled near real-time dashboarding for business users.</p>
+                    </div>
+                    <div class="project">
+                        <h4><a href="link">Project 3: Data Lake & Azure Blob Integration</a></h4>
+                        <p>Created a scalable data ingestion framework to ingest semi-structured data (JSON, XML) from Azure Blob Storage into a structured SQL database. Performed schema inference and transformation using PySpark.</p>
+                    </div>
+                    <div class="project">
+                        <h4><a href="link">Project 4: Customer 360 Data Platform</a></h4>
+                        <p>Engineered a Customer Data Platform (CDP) layer combining data from CRM, feedback systems (Revinate, GeeDesk), and booking platforms. Used Tableau Prep, PostgreSQL, and Python to enable unified customer segmentation and insights for marketing teams.</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p>sivapriyanmani050299@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <h3>Phone No.</h3>
+                <p>+91 8610108460</p>
+            </div>
+            <div class="contact-info">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/sivapriyan-m">LinkedIn Profile</a></p>
+            </div>
+            <div class="contact-info">
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/M-Sivapriyan" target="_blank">GitHub Profile</a></p>
+            </div>
+        </section>
+        
+        <button id="scrollToTopBtn" title="Go to top">↑</button>
+    </div>
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
